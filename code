@@ -1,0 +1,38 @@
+
+
+package javaapplication1;
+
+/**
+ *
+ * @author Mansouri-Ons
+ */
+public class JavaApplication1 {
+
+    
+    public static void main(String[] args) {
+        nombre(-6,10);
+        
+    }
+    public static double nombre (int a, int b)
+    {
+        int i;
+        for ( i=a;i<b;i++){
+            if (((i % 3) != 0)&&((i % 5)!=0))
+            
+            { System.out.print(i + " ");
+            }
+         if ((i % 3) == 0)
+            
+            { System.out.print('H'+ " ");
+            }
+         if ((i % 5) == 0)
+            
+            { System.out.print('S'+ " ");
+            }
+        }
+            
+        return 0;
+        
+    }
+    
+}
