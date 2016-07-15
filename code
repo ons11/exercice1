@@ -10,29 +10,60 @@ public class JavaApplication1 {
 
     
     public static void main(String[] args) {
-        nombre(-6,10);
+        nombre(20,0);
+        nombre (0,20);
         
     }
     public static double nombre (int a, int b)
     {
+        if (a<=b) {
+            
+        
         int i;
-        for ( i=a;i<b;i++){
+        for ( i=a+1;i<b;i++){
             if (((i % 3) != 0)&&((i % 5)!=0))
             
             { System.out.print(i + " ");
             }
-         if ((i % 3) == 0)
+            else if (((i % 3) == 0)&&((i % 5)==0))
+            {
+                System.out.print("HS"+ " ");
+            }
+            
+            else if ((i % 3) == 0)
             
             { System.out.print('H'+ " ");
             }
-         if ((i % 5) == 0)
+            else  if ((i % 5) == 0)
             
             { System.out.print('S'+ " ");
             }
         }
+        }
+        if (a>=b)
+        {
+           int i;
+        for ( i=a-1;i>b;i--
+                ){
+            if (((i % 3) != 0)&&((i % 5)!=0))
             
+            { System.out.print(i + " ");
+            }
+            else if (((i % 3) == 0)&&((i % 5)==0))
+         {
+        System.out.print("HS"+ " ");
+        }
+            else if ((i % 3) == 0)
+            
+            { System.out.print('H'+ " ");
+            }
+         else if ((i % 5) == 0)
+            
+            { System.out.print('S'+ " ");
+            }
+         }}
+       System.out.println("");    
         return 0;
         
-    }
+    }}
     
-}
